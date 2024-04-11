@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro de Usuario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <body class="w3-container">
+        <div class="w3-display-middle w3-card-4">
+            <header class="w3-container w3-blue">
+                <a href="../" class="w3-button w3-white w3-border w3-border-blue">Voltar</a>
+              </header>
+              <div class="w3-container w3-margin-right">
+                <form id="prodForm">
+                    <label for="nomeUser">Nome:</label><br>
+                    <input type="text" id="nomeUser" name="nomeUser" required><br>
+                    <label for="emailUser">Email:</label><br>
+                    <input type="text" id="emailUser" name="emailUser" required><br>
+                    <label for="senhaUser">Senha:</label><br>
+                    <input type="password" id="senhaUser" name="senhaUser" required><br>
+                    <label for="datanascimento">Data de Nascimento:</label><br>
+                    <input type="date" id="datanascimento" name="datanascimento" required><br>
+                    <button type="button" id="submitButton" class="w3-button w3-white w3-border w3-border-blue">Criar Usuario</button>
+                </form>
+                <footer class="w3-container w3-blue">
+                    
+                  </footer>
+              </div>
+           
+    </div>
+<script src="js/sweetalert2.all.min.js"></script> 
+<script src="js/CreateUser.js"></script>  
+</body>
+</html>

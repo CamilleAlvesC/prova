@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Usuário</title>
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/atualiza.css">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Atualizar Informações do Usuário</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nomeUser">Nome de Usuário:</label>
+                <input type="text" id="nomeUser" name="nomeUser" required>
+            </div>
+            <div class="form-group">
+                <label for="emailUser">Email:</label>
+                <input type="email" id="emailUser" name="emailUser" required>
+            </div>
+            <div class="form-group">
+                <label for="senhaUser">Nova Senha:</label>
+                <input type="password" id="senhaUser" name="senhaUser">
+            </div>
+            <button class="w3-button w3-white w3-border w3-border-blue" onclick="update()">Atualizar</button>
+        </form>
+    </div>
+    <script src="js/AtualizarUser.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+</body>
+</html>
