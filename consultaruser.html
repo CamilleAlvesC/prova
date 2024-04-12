@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/sweetalert2.min.css">
-    <title>Gerenciamento de Produto</title>
 </head>
 <body class="w3-container">
     <div class="w3-display-middle w3-card-4">
@@ -13,23 +13,11 @@
             <a href="../" class="w3-button w3-white w3-border w3-border-blue">Voltar</a>
           </header>
           <div class="w3-container w3-margin-right">
-            <h3>Buscar Usuario</h3><br>
-            <label for="getUserId">ID do Usuario:</label><br>
-            <input type="number" id="getUserId"><br>
-            <button class="w3-button w3-white w3-border w3-border-blue" onclick="getUser()">Buscar</button>
-
-            <h3>Gerenciar Produto</h3>
-            <label for="nomeUser">Nome:</label><br>
-            <input type="text" id="nomeUser"><br>
-            <label for="eNome">Preco:</label><br>
-            <input type="text" id="inputPreco"><br>
-            <label for="inpuNome">Quantidade:</label><br>
-            <input type="text" id="inputQuantidade"><br>
-            <button class="w3-button w3-white w3-border w3-border-blue" onclick="AtualizarUser()">Atualizar</button>
-            <button class="w3-button w3-white w3-border w3-border-blue" onclick="DeleteUser()">Excluir</button>
+            <div id="proList"></div>
+          </div>
         </div>
-    </div>
-<script src="js/sweetalert2.all.min.js"></script> 
-<script src="js/BuscarUser.js"></script>
+
+        <script src="js/sweetalert2.all.min.js"></script> 
+<script src="js/GetAllUser.js"></script> 
 </body>
 </html>
