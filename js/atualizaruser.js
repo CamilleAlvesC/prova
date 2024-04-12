@@ -1,24 +1,26 @@
 function updateUser() {
-    const UserId = document.getElementById("getUserId").value;
-    const nomeUser = document.getElementById("nomeUser").value;
-    const email = document.getElementById("emailUser").value;
-    const senhaUser = document.getElementById("senhaUser").value;
-    const usuarioAtualizado = {
-        id: UserId,
+    const idUser = document.getElementById("inputId").value;
+    const nomeUser = document.getElementById("inputNome").value;
+    const emailUser = document.getElementById("inputEmail").value;
+    const senhaUser = document.getElementById("inputSenha").value;
+    const datanascimentoUser = document.getElementById("inputDataNascimento").value;
+    
+    const UsuarioAtualizado = {
         nome: nomeUser,
-        email: email,
-        senha: senhaUser
+        email: emailUser,
+        senha: senhaUser,
+        datanascimento: datanascimentoUser
     };
-    if (!UserId) {
-        Swal.fire('Por favor, insira o ID do Usuario!')
+    if (!idUser) {
+        Swal.fire('Por favor, insira um id!')
         return;
     }
-    fetch('/backend/usuarios.php?id=' + UserId, { 
+    fetch('/backend/usuarios.php?id=' + idUser, { 
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(usuarioAtualizado)
+        body: JSON.stringify(UsuarioAtualizado)
     })
     .then(response => {
         if (!response.ok) {

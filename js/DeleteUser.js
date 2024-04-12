@@ -1,5 +1,5 @@
-function deleteProd() {
-    const userID = document.getElementById("getUserId").value;
+function deleteUser() {
+    const userID = document.getElementById("userId").value;
     if (!userID) {
         Swal.fire('Por favor, insira um id!')
         return;
@@ -22,7 +22,6 @@ function deleteProd() {
             Swal.fire('Não pode Deletar!')
         }else{
             Swal.fire('Excluido com sucesso!')
-            document.getElementById("nomeUser").value = ''; 
         } 
         
     })

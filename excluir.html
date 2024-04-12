@@ -7,21 +7,20 @@
     <link rel="stylesheet" href="css/excluir.css">
 </head>
 <body>
+    <header class="w3-container w3-blue">
+        <a href="../" class="w3-button w3-white w3-border w3-border-blue">Voltar</a>
+      </header>
     <div class="container">
         <h1>Excluir Usuário</h1>
-        <form id="userForm">
+
             <div class="form-group">
-                <label for="username">Nome de Usuário:</label>
-                <input type="text" id="username" name="username" required>
+                <label for="id">Id de Usuário:</label>
+                <input type="number" id="userId" name="id" required>
             </div>
             <div class="form-group">
-                <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required>
+                <button type="submit" onclick="deleteUser()">Excluir</button>
             </div>
-            <div class="form-group">
-                <button type="submit">Excluir</button>
-            </div>
-        </form>
+
     </div>
     <script src="js/sweetalert2.all.min.js"></script>
     <script src="js/DeleteUser.js"></script>

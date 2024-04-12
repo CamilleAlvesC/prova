@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atualizar Usuário</title>
     <link rel="stylesheet" href="css/w3.css">
-    <link rel="stylesheet" href="css/atualiza.css">
     <link rel="stylesheet" href="css/sweetalert2.min.css">
 </head>
+
 <body>
+    <header class="w3-container w3-blue">
+        <a href="../" class="w3-button w3-white w3-border w3-border-blue">Voltar</a>
+      </header>
     <div class="container">
         <h1>Atualizar Informações do Usuário</h1>
-        <form id="userForm">
-            <div class="form-group">
-                <label for="UserId">ID do Usuário:</label>
-                <input type="text" id="UserId" name="UserId" required>
-            </div>
-            <div class="form-group">
-                <label for="nomeUser">Nome de Usuário:</label>
-                <input type="text" id="nomeUser" name="nomeUser" required>
-            </div>
-            <div class="form-group">
-                <label for="emailUser">Email:</label>
-                <input type="email" id="emailUser" name="emailUser" required>
-            </div>
-            <div class="form-group">
-                <label for="senhaUser">Nova Senha:</label>
-                <input type="password" id="senhaUser" name="senhaUser">
-            </div>
-            <button class="w3-button w3-white w3-border w3-border-blue" onclick="updateUser()">Atualizar</button>
-        </form>
+
+        <div class="form-group">
+            <label for="userId">ID do Usuário:</label>
+            <input type="number" id="inputId" name="userId" required>
+        </div>
+        <div class="form-group">
+            <label for="nomeUser">Nome de Usuário:</label>
+            <input type="text" id="inputNome" name="nomeUser" required>
+        </div>
+        <div class="form-group">
+            <label for="emailUser">Email:</label>
+            <input type="text" id="inputEmail" name="emailUser" required>
+        </div>
+        <div class="form-group">
+            <label for="senhaUser">Nova Senha:</label>
+            <input type="text" id="inputSenha" name="senhaUser">
+        </div>
+        <div class="form-group">
+            <label for="dataUser">Nova Data Nascimento:</label>
+            <input type="date" id="inputDataNascimento" name="DataNascimentoUser">
+        </div>
+        <button class="w3-button w3-white w3-border w3-border-blue" onclick="updateUser()">Atualizar</button>
+
     </div>
-    <script src="js/AtualizarUser.js"></script>
-    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="./js/atualizaruser.js"></script>
+    <script src="./js/sweetalert2.all.min.js"></script>
 </body>
+
 </html>
